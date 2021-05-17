@@ -1,0 +1,179 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+header{
+    
+    display: inline-flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+}
+#logo{
+    position: absolute;
+    margin-left: 1.5%;
+    margin-top: 10px;
+}
+.headbutton{
+    margin-right: 3%;
+    margin-top: 10px;
+    background-color: transparent;
+}
+#firstscreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-image: url("Imagenes_CSS/background.png");
+    height: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1{
+    color: white;
+    align-self:center;
+    font-size: 50px;
+    text-align: center;
+   
+}
+h2{
+    color:white;
+    align-self: center;
+    text-align: center;
+}
+h4{
+    margin: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #111111;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+#dispositivos,#cancelar,#precio{
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.options{
+    color: bisque;
+    justify-items: center;
+}
+h3{
+    text-align: center;
+    color: grey;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+#img_disp{
+    min-width: 100%;
+    padding-bottom: 14px;
+    padding-right:20px ;
+}
+
+img{
+    padding: 10px;
+}
+#tex_cancel{
+    color: white;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    background-color: black;
+}
+#desc{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#text{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15%;
+}
+button{
+    color: white;
+    background-color: blue;
+    align-self: center;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+}
+#disfruta{
+    padding-left: 10%;
+    padding-right: 10%;
+    align-self: center;
+}
+#dispo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#macbook{
+    height: 200px; 
+    width: auto;
+    align-self: center;
+    padding-bottom: 50%;
+    margin-top: 20%;
+}
+#phone{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    margin: 0px;
+    padding-left: 10%;
+    padding-bottom: 20px;  
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+ul{
+    background-color: black;
+    list-style-type: none;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+li{
+    color: white;
+    padding-bottom: 15px;
+    text-align: left;
+}
+@media screen and (max-width: 650px){
+    nav,section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #dispositivos,#cancelar,#precio{
+        align-self: center;
+        height: 240px;
+        width: 120px;
+    }
+    #macbook{
+        padding-top:20px
+    }
+    #desc{
+        margin-top: 20%;
+        padding: 10%;
+    }
+    #text{
+        margin-bottom: 5%;
+    }
+    footer{
+        flex-flow: column wrap;
+    }
+}
